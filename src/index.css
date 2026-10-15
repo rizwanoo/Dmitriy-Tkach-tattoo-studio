@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #090909;
+    --carbon: #111112;
+    --graphite: #202022;
+    --bone: #E9E4DC;
+    --silver: #999995;
+    --crimson: #76262B;
+    --white: #FFFFFF;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--bone);
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: -0.01em;
+  }
+
+  /* Editorial & Condensed Display Typography */
+  .font-display {
+    font-family: 'Bebas Neue', 'Oswald', sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-feature-settings: 'salt' on, 'ss01' on;
+  }
+
+  /* Literary Accent Typography */
+  .font-accent {
+    font-family: 'Cormorant Garamond', Garamond, Georgia, serif;
+    font-style: italic;
+    letter-spacing: -0.01em;
+  }
+
+  /* Focus ring for WCAG accessibility */
+  :focus-visible {
+    outline: 2px solid #76262B;
+    outline-offset: 2px;
+  }
+}
+
+/* Glassmorphism Surface */
+.glass-panel {
+  background: rgba(17, 17, 18, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Luxury Film Grain */
+.film-grain {
+  background-image: radial-gradient(rgba(233, 228, 220, 0.04) 1px, transparent 0);
+  background-size: 20px 20px;
+}
+
+/* Custom Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #090909;
+}
+::-webkit-scrollbar-thumb {
+  background: #202022;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #76262B;
+}
