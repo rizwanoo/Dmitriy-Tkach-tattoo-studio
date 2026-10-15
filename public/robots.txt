@@ -1,0 +1,6 @@
+# Robots.txt for Dmitriy Tkach Tattoo Artistry
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://monsterinktattoo.com/sitemap.xml

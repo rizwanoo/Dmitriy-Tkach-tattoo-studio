@@ -1,0 +1,23 @@
+{
+  "short_name": "DmitriyTkach",
+  "name": "Dmitriy Tkach — Black & Grey Tattoo Artist",
+  "description": "Custom black-and-grey tattoo artistry by Dmitriy Tkach serving New Jersey and New York.",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#090909",
+  "theme_color": "#090909",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "categories": ["lifestyle", "art"]
+}
